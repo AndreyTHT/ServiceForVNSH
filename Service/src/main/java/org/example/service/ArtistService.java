@@ -2,6 +2,7 @@ package org.example.service;
 
 import java.util.List;
 
+import org.example.error.ArtistNotFoundException;
 import org.example.model.Artist;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,7 @@ public class ArtistService {
         return repo.findAll();
     }
 
-    public Artist getById(Integer id){
+    public Artist getById(Integer id) throws ArtistNotFoundException {
         return repo.getById(id);
     }
 }

@@ -7,9 +7,9 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-public class DemoAplication {
+public class DemoApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DemoAplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 
     @Bean
