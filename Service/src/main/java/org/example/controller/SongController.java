@@ -44,7 +44,8 @@ import org.springframework.web.bind.annotation.RequestBody;
             var song = new Song(
                     createSong.getName(),
                     createSong.getArtistName(),
-                    createSong.getAuditions()
+                    createSong.getAuditions(),
+                    createSong.getIdArtist()
             );
             validateSong(song);
             return service.create(song);
@@ -65,7 +66,8 @@ import org.springframework.web.bind.annotation.RequestBody;
             var song = new Song(
                     updateSong.getName(),
                     updateSong.getArtistName(),
-                    updateSong.getAuditions()
+                    updateSong.getAuditions(),
+                    updateSong.getIdArtist()
             );
             validateSong(song);
             return service.updateById(id, song);

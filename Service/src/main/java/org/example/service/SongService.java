@@ -18,6 +18,10 @@ public class SongService {
         return repo.findAll();
     }
 
+    public List<Song> getSongsByArtistId(Integer idArtist) {
+        return repo.findAllOfArtist(idArtist);
+    }
+
     public Song create(Song song) {
         return repo.create(song);
     }

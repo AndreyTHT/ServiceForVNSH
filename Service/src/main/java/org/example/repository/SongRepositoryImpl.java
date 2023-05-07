@@ -21,6 +21,13 @@ public class SongRepositoryImpl implements SongRepository {
         return new ArrayList<>(songMap.values());
     }
 
+
+    //сделать код который будет выводить песни только данного артиста
+    @Override
+    public List<Song> findAllOfArtist(Integer idArtist) {
+        return new ArrayList<>(songMap.values());
+    }
+
     @Override
     public Song create(Song song) {
         song.setId(autoId.getAndIncrement());

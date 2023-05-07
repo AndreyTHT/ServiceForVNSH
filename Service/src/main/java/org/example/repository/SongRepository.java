@@ -7,6 +7,7 @@ import org.example.model.Song;
 
 public interface SongRepository {
     List<Song> findAll();
+    List<Song> findAllOfArtist(Integer idArtist);
 
     Song create(Song song);
 
