@@ -1,7 +1,14 @@
+.gradle
+build/
 target/
+!gradle/wrapper/gradle-wrapper.jar
 !.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+*.db
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -11,6 +18,9 @@ target/
 *.iws
 *.iml
 *.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
 ### Eclipse ###
 .apt_generated
@@ -20,6 +30,9 @@ target/
 .settings
 .springBeans
 .sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
@@ -27,9 +40,6 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
